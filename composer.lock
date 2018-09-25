@@ -4,8 +4,66 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66ca7343889332c2b8ecca11c251430c",
+    "content-hash": "86dcaf21944e3d42774c364a6462ad4a",
     "packages": [
+        {
+            "name": "alish/telegram",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pyramid-ali/telegram.git",
+                "reference": "8a0142e73b5c683a036e1c247ba83ed95a2c8663"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pyramid-ali/telegram/zipball/8a0142e73b5c683a036e1c247ba83ed95a2c8663",
+                "reference": "8a0142e73b5c683a036e1c247ba83ed95a2c8663",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~5.0",
+                "illuminate/http": "~5.0",
+                "illuminate/routing": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Alish\\Telegram\\TelegramServiceProvider"
+                    ],
+                    "aliases": {
+                        "Telegram": "Alish\\MeliPayamak\\Facades\\TelegramFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Alish\\Telegram\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ali Shabani",
+                    "email": "pyramidalish@gmail.com"
+                }
+            ],
+            "description": "a laravel package for telegram bot",
+            "keywords": [
+                "laravel",
+                "telegram",
+                "telegram bot"
+            ],
+            "time": "2018-01-17T00:00:00+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
