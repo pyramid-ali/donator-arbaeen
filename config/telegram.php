@@ -3,8 +3,8 @@
     return [
 
         'defaults' => [
-            'token_bot' => '692759954:AAHJqwVABxaKxIzjmQnYjbZ9CQA7CceSm-8',
-            'webhook' => '692759954:AAHJqwVABxaKxIzjmQnYjbZ9CQA7CceSm-8',
+            'token_bot' => env("TELEGRAM_TOKEN"),
+            'webhook' => env("TELEGRAM_WEBHOOK"),
         ],
 
         'commands' => [
